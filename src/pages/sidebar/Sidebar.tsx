@@ -1,6 +1,13 @@
-import { Header } from './header/Header'
+import { Dashboard} from "./dashboard/Dashboard";
+
+
+
+
 export function Sidebar() {
-    return(
-      <Header/>
-    )
+return(
+  <>
+  <Dashboard/>
+  </>
+)
+
 }
