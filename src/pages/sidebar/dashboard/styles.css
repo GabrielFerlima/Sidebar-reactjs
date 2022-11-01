@@ -16,7 +16,7 @@
     --text-color: #707070;
 
     /* ====== Transition ====== */
-    --tran-03: all 0.2s ease;
+    --tran-02: all 0.2s ease;
     --tran-03: all 0.3s ease;
     --tran-04: all 0.3s ease;
     --tran-05: all 0.3s ease;
@@ -69,8 +69,13 @@ body {
     min-width: 60px;
 }
 
+.sidebar li a:hover .icon, 
+.sidebar li a:hover .navText {
+    color: var(--sidebar-color);
+    transition: var(--tran-02);
+}
+    
 .sidebar li a {
-
     color: #707070;
 }
 
@@ -80,6 +85,10 @@ body {
     justify-content: center;
     min-width: 60px;
     background: var(--primary-color-light);
+}
+
+.search {
+   color: #707070;
 }
 
 .searchLink input {
