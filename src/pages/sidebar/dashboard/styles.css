@@ -74,6 +74,62 @@ body {
     color: var(--sidebar-color);
     transition: var(--tran-02);
 }
+
+.sidebar .menubar {
+    height: calc(100% - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menubar .mode {
+    background: var(--primary-color-light);
+}
+
+.menubar .mode .moonSun {
+    height: 50px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.menubar .mode .icon {
+    position: absolute;
+}
+
+.menubar .mode .iconSun{
+    opacity: 0;
+}
+
+.menubar .mode .toggleSwitch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-width: 60px;
+    cursor: pointer;
+}
+
+.menubar .mode .switch {
+    position: relative;
+    height: 22px;
+    width: 44px;
+    border-radius: 25px;
+    background: var(--toggle-color);
+}
+
+.switch::before {
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    background: var(--sidebar-color);
+    cursor: pointer;
+}
     
 .sidebar li a {
     color: #707070;
