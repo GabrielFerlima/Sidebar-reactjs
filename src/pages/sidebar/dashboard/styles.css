@@ -7,7 +7,7 @@
 }
 
 :root{
-    /* ===== Colors ===== */
+    /*  Colors  */
     --body-color: #E4E9F7;
     --sidebar-color: #FFF;
     --primary-color: #695CFE;
@@ -15,7 +15,7 @@
     --toggle-color: #DDD;
     --text-color: #707070;
 
-    /* ====== Transition ====== */
+    /*    Transition  */
     --tran-02: all 0.2s ease;
     --tran-03: all 0.3s ease;
     --tran-04: all 0.3s ease;
@@ -110,15 +110,15 @@ body {
     cursor: pointer;
 }
 
-.menubar .mode .switch {
+/* .menubar .mode .switch {
     position: relative;
     height: 22px;
     width: 44px;
     border-radius: 25px;
     background: var(--toggle-color);
-}
+} */
 
-.switch::before {
+ /*.switch::before {
     content: '';
     position: absolute;
     height: 15px;
@@ -130,7 +130,7 @@ body {
     background: var(--sidebar-color);
     cursor: pointer;
 }
-    
+ */
 .sidebar li a {
     color: #707070;
 }
@@ -189,18 +189,48 @@ body {
     margin-top: -2px;
 }
 
-.toggle {
-   position: absolute;
-   top: 50%;
-   right: -25px;
-   transform: translateY(-50%);
-   height: 25px;
-   width: 25px;
-   background: var(--primary-color);
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   border-radius: 50%;
-   color: var(--sidebar-color);
-   font-size: 22px;
+.bottomContent {
+    color: var(--text-color);
 }
+
+.button {
+ height: 100%;
+ min-width: 46px;
+ position: relative;
+ height: 22px;
+ width: 44px;
+ border-radius: 25px;
+ border: none;
+ background: var(--toggle-color);
+ cursor: pointer;
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    background: var(--sidebar-color);
+    cursor: pointer;
+}
+.toggle {
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    transform: translateY(-50%);
+    height: 25px;
+    width: 25px;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--sidebar-color);
+    font-size: 22px;
+    cursor: pointer;
+ }
+ 

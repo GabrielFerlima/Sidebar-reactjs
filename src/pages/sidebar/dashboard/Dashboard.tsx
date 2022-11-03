@@ -83,11 +83,12 @@ export function Dashboard() {
                         <div className='moonSun'>
                             <Moon size={20}  className="iconMoon"/>
                             <Sun size={20}  className="iconSun"/>
+                          
                         </div>
                         <span className='modeText'>Dark Mode</span>
 
                         <div className='toggleSwitch'>
-                            <span className='switch'></span>
+                            <button className='button'></button>
                         </div>
                     </li>
                 </div>
