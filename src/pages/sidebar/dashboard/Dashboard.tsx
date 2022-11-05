@@ -1,7 +1,15 @@
 import './styles.css'
 import logo from '../../../assets/logo.png'
-import { Bell, CaretRight, ChartBar, ChartPie, Heart, HouseLine, MagnifyingGlass, Moon, SignOut, Sun, Wallet } from 'phosphor-react'
+import { Bell, CaretRight, ChartBar, ChartPie, Heart, HouseLine, MagnifyingGlass, Moon, RadioButton, SignOut, Sun, Wallet } from 'phosphor-react'
+import { useState } from 'react'
 export function Dashboard() {
+
+
+
+    const [show, setShow] = useState(true)
+    const toggleHide = () => setShow(false)
+
+
     return (
         <nav className='sidebar'>
             <header>
@@ -15,10 +23,15 @@ export function Dashboard() {
                         <span className='profession'>Web developer</span>
                     </div>
                 </div>
-                <CaretRight className='toggle' size={20} />
+
+                 <button onClick={toggleHide }>
+                    {show?  <CaretRight className='toggle'size={20} />:null}
+                   
+                    </button>
+
             </header>
 
-
+         
             <div className='menubar'>
                 <div className='menu'>
                     <li className='searchLink'>
